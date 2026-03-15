@@ -8,8 +8,6 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.List;
 
-
-
 class WordleTest {
     private PrintWriter log;
     private WordleDictionary dictionary;
@@ -72,7 +70,6 @@ class WordleTest {
         assertEquals(5, game.getSteps());
     }
 
-    @DisplayName("Проверка окончания игры после траты всех попыток")
     @Test
     void testGameOverAfterSixAttempts() throws InvalidWordException, WordNotFoundInDictionaryException {
         game = new WordleGame(dictionary, log, "волна");
@@ -88,7 +85,6 @@ class WordleTest {
         assertEquals(0, game.getSteps());
     }
 
-    @DisplayName("Проверка счетчика попыток")
     @Test
     void testGetHint() throws WordNotFoundInDictionaryException {
         game = new WordleGame(dictionary, log, "книга");
