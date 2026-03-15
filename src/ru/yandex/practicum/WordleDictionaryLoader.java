@@ -27,7 +27,7 @@ public class WordleDictionaryLoader {
                 }
             }
 
-            log.println("Загружен словарь из " + countLines + "слов");
+            log.println("Загружен словарь из " + countLines + " слов");
 
             if (words.isEmpty()) {
                 throw new DictionaryUploadException("В словаре нет слов из 5 букв");
